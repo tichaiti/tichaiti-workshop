@@ -45,6 +45,7 @@ $('.socialButton').on('click', function() {
 });
 
 
+
 // Showing the loading spinner
 $(document)
     .ajaxSend(() => $('.loader').addClass('loading'))
