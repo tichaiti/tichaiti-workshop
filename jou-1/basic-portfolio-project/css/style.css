@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Inivèsèl css */
 input, button, textarea {
     outline: none;
 }
 
-h3 {
+h3, h2 {
     margin-bottom: 20px;
 }
 
@@ -27,27 +35,15 @@ input {
     padding: 8px;
 }
 
+
 .container {
     width: 960px;
     margin: 50px auto;
-    background-color: #fff;
-    /* border: 1px solid lightgrey; */
-    /* padding: 10px; */
     position: relative;
 }
 
 
-nav {
-    height: 300px;
-    /* border: 1px solid lightgrey; */
-    margin: 30px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #eee;
-}
-
-
+/* Pati tèt lan */
 header {
     display: flex;
     justify-content: space-between;
@@ -72,10 +68,23 @@ header .links a {
 }
 
 
+/* Pati mitan */
+nav,
+.about,
+.likes,
+.contact {
+    height: 400px;
+}
+
+nav {
+    margin: 30px 0px;
+    background-color: #eee;
+}
+
+
+/* Pati de mwen an */
 .about {
     margin-top: 20px;
-    /* background-color: #007698; */
-    /* color: #fff; */
     text-align: center;
     height: 400px;
 }
@@ -84,17 +93,17 @@ header .links a {
     height: 250px;
     margin-right: 10px;
     border-radius: 50%;
-    /* border: 5px solid #00C8EA; */
 }
 
 .about p {
     text-align: left;
 }
 
+
+
+/* Pati de bagay ke mwen renmen */
 .likes {
     margin-top: 20px;
-    height: 500px;
-    /* border: 1px solid lightgrey; */
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -102,27 +111,29 @@ header .links a {
 }
 
 
+/* Pati pou'w kontakte'm */
 .contact {
     text-align: center;
-    height: 400px;
     border: 1px solid lightgrey;
     margin-top: 20px;
     padding: 10px;
-    /* background: #00C8EA; */
 }
 
 .contact form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
 }
 
-.contact input {
-    width: 45%;
-    margin-left: 10px;
-    margin-top: 20px;
+.contact form,
+.contact div {
+    width: 100%;
 }
+
+
+.contact div input {
+    width: 45%;
+}
+
+
 .contact textarea {
     width: 90%;
     margin-top: 20px;
@@ -139,12 +150,11 @@ header .links a {
     border-radius: 4px;
 }
 
+
+/* Pati anba */
 footer {
     position: absolute;
     bottom: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     width: 100%;
 }
