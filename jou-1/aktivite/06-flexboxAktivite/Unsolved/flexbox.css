@@ -1,0 +1,46 @@
+/**
+ * Flexbox Aktivite
+ **/
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+}
+
+header {
+  padding: 20px;
+  margin-bottom: 20px;
+  color: #333;
+  background: #ccc;
+}
+
+.column-3 {
+
+}
+
+section {
+}
+
+#left {
+}
+
+#middle {
+}
+
+#right {
+}
+
+#full {
+}
+
+#division {
+}
+
+aside {
+}
+
+footer {
+}

@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Inivèsèl css */
+input, button, textarea {
+    outline: none;
+}
+
+h3, h2 {
+    margin-bottom: 20px;
+}
+
+p, li {
+    font-size: 1.4em;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+    line-height: 35px;
+}
+
+input {
+    font-size: 16px;
+    padding: 8px;
+}
+
+
+.container {
+    width: 960px;
+    margin: 50px auto;
+    position: relative;
+}
+
+
+/* Pati tèt lan */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header .links a:first-child {
+    border: none;
+}
+
+
+header .links a {
+    margin-left: 30px;
+    list-style: none;
+    border-left: 1px solid lightgrey;
+    padding-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 18px;
+    color: #7FDBFF;
+}
+
+
+/* Pati mitan */
+nav,
+.about,
+.likes,
+.contact {
+    height: 400px;
+}
+
+nav {
+    margin: 30px 0px;
+    background-color: #eee;
+}
+
+
+/* Pati de mwen an */
+.about {
+    margin-top: 20px;
+    text-align: center;
+    height: 400px;
+}
+.about img {
+    float: left;
+    height: 250px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.about p {
+    text-align: left;
+}
+
+
+
+/* Pati de bagay ke mwen renmen */
+.likes {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7FDBFF;
+}
+
+
+/* Pati pou'w kontakte'm */
+.contact {
+    text-align: center;
+    border: 1px solid lightgrey;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.contact form {
+    flex-direction: column;
+}
+
+.contact form,
+.contact div {
+    width: 100%;
+}
+
+
+.contact div input {
+    width: 45%;
+}
+
+
+.contact textarea {
+    width: 90%;
+    margin-top: 20px;
+}
+
+.contact button {
+    width: 150px;
+    padding: 10px;
+    background-color: #7FDBFF;
+    color: #fff;
+    margin-top: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+
+/* Pati anba */
+footer {
+    position: absolute;
+    bottom: 0;
+    flex-direction: column;
+    width: 100%;
+}
