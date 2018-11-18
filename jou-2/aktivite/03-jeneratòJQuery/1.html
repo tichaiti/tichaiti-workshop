@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic jQuery Dump</title>
+
+  <!-- Ajoute lyen de jQuery an -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <!-- Kreye yon div ki vid. Byen remake ke pa gen anyen anndan div sa. -->
+  <div id="empty-div"></div>
+
+  <script type="text/javascript">
+
+    // Men gras avèk seleksyon $ ki nan jQuery an, nou yon zouti ki pwisan ke nou kapab seleksyon epi manipile eleman nan HTML lan.
+
+    // La nou itilize jQuery .HTML metòd lan pou'n kapab seleksyon epi chanje kontnu div ki vid lan
+    $("#empty-div").html("<h1>Hello friends!</h1>");
+
+    // E konsa tou nou kapab ajoute yon nouvo liy tou avèk metòd .append lan. 
+    $("#empty-div").append("A pleasure to meet you!");
+
+  </script>
+
+</body>
+</html>

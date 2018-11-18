@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <title>Basic jQuery Dump</title>
 
-  <!-- Added link to the jQuery library -->
+  <!-- Ajoute lyen de jQuery an -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 
   <div id="empty-div"></div>
 
-  <!-- Here we're adding a bit of CSS -->
+  <!-- La, nou ajoute kèk css -->
   <style>
     .fancy {
       font-size: 100px;
@@ -23,16 +23,16 @@
 
     $("#empty-div").html("<h1>Hello friends!</h1>");
 
-    // jQuery alternative to: var newDiv = document.createElement("div");
-    var newDiv = $("<div>");
+    // jQuery sa ekivalan a: const newDiv = document.createElement("div");
+    let newDiv = $("<div>");
 
-    // jQuery alternative to: newDiv.textContent = "A pleasure to meet you!";
+    // jQuery sa ekivalan a: newDiv.textContent = "A pleasure to meet you!";
     newDiv.text("A pleasure to meet you!");
 
-    // jQuery alternative to: document.querySelector("#empty-div").appendChild(newDiv);
+    // jQuery sa ekivalan a: document.querySelector("#empty-div").appendChild(newDiv);
     $("#empty-div").append(newDiv);
 
-    // If we need to apply some CSS, we can quickly do so, using the jQuery ".attr" method.
+    // Nou kapab fasilman ajoute css avèk jQuery si nou vle avèk atribi ".attr" an.
     newDiv.attr("class", "fancy");
 
   </script>
