@@ -1,13 +1,13 @@
-### File
+### Fichye
 
 * [`pizza-variables`](Unsolved/pizza-variables.html)
 
-### Instructions
+### Enstriksyon
 
-* Using the instructions in the file above, fill in the missing JavaScript code to create variables.
+* Ranpli kòd JavaScript ki manke yo. 
 
-* When you are done, open the file in Chrome and check the output.
+* Lè'w fini, ouvri fichye an nan chrome, pou'w kapab wè rezilta an.
 
-* If you successfully completed the activity, you should see a series of pop-up windows with text inside.
+* Si'w konplete aktivite an avèk siksè, ou sipoze wè aplikasyon an fonksyonèl.
 
-* Finally, look at the rest of the code and try to figure out why the text displayed the way it did.
+* Finalman, eseye gade rès kòd, epi eseye konprann pouki rezon ou wè text yo parèt.
