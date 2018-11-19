@@ -56,13 +56,14 @@
 
         // --- //
 
-        function afficher(rec) {
+        function afficher(data) {
             var afficheDb = document.getElementById('afficheDb');
             var table = '<table><tr><th>Ville</th><th>Pr&eacute;nom</th><th>Nom</th></tr>';
-            if(rec.val()!= null) {
-                rec.val().forEach(data => {
-                    table += '<tr><td>'+data.vil+'</td><td>'+data.prenon+'</td><td>'+data.non+'</td></tr>';
-                });
+            const result = data.val();
+            if(result != null) {
+                for(let key in  result) {
+                    table += '<tr><td>'+result[key].vil+'</td><td>'+result[key].prenon+'</td><td>'+result[key].non+'</td></tr>';
+                }
             }
             table += '</table>';
             afficheDb.innerHTML = table;
@@ -75,21 +76,23 @@
 
             var donnee = {};
             donnee = {
-                prenon: prenon.val,
-                non: non.val,
-                vil: vil.val
+                prenon: prenon.value,
+                non: non.value,
+                vil: vil.value
             };
-            dbRef.push(donnee);
 
-            // var nouvo = dbRef.push();
-            // nouvo.set(donnee, erreur => {
-            //     if(erreur) {
-            //         console.log('Gen yon erè.');
-            //     } else {
-            //         console.log('Tout bagay byen pase. Donnée ajouté. '+ erreur);
-            //     }
-            // });
-
+            var nouvo = {};
+            nouvo[dbRef.push().key] = donnee;
+            dbRef.update(nouvo, erreur => {
+                if(erreur) {
+                    console.log('Gen yon erè.');
+                } else {
+                    console.log('Tout bagay byen pase. Donnée ajouté. '+ erreur);
+                }
+            });
+            prenon.value = '';
+            non.value = '';
+            vil.value = '';
         }
 
         // --- //
