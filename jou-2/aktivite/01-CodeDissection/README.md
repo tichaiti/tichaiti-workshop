@@ -1,11 +1,11 @@
-### File
+### Fichye
 
 * [`js-dissect`](js-dissect.html)
 
-### Instructions
+### Enstriksyon
 
-* Open the file in Chrome, and observe what happens.
+* Ouvri fichye an sou Chrome epi obzève tout sa kap pase.
 
-* With a partner, try to explain how the code connects to the events that happen on the page.
+* Ansanm avèk yon lò etidyan, eseye esplike kisa kap pase nan paj lan.
 
-* **NOTE:** We haven't covered JavaScript before, but a big part of being a developer is learning on the fly!
+* **NOTE:** Note ke nou poko aprann JavaScript, men yon gwo pati antanke Developer se aprann sou plas.
