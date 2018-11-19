@@ -4,6 +4,6 @@
 
 ### Enstriksyon
 
-* Add in the missing code such that clicking the big blue button triggers a random number (between 1 and 1000) to be selected and prominently displayed in the random-number div.
+* Ajoute kòd ki manke pou ke lè'w klike sou bouton ble an, li sipoze seleksyone yon chif pa aza (de 1 a 10000).
 
-  * **HINT:** None. You got this.
+  * **HINT:** Okenn, ou kapab fè sa, nou kwè nan ou.

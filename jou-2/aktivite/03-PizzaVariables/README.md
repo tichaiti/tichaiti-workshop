@@ -1,6 +1,6 @@
 ### Fichye
 
-* [`pizza-variables`](Unsolved/pizza-variables.html)
+* [`pizza-letiables`](Unsolved/pizza-letiables.html)
 
 ### Enstriksyon
 

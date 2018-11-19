@@ -1,11 +1,11 @@
-### File
+### Fichye
 
-* [`arrays-activity`](Unsolved/arrays-activity.html)
+* [`arrays-Aktivite`](Unsolved/arrays-Aktivite.html)
 
-### Instruction
+### Enstriksyon
 
-* With a partner, take a few moments to look over the code in the file above.
+* Ansanm avèk moun ki bò kote'w lan, pran yon ti tan pou'w gade kòd lan ki nan fichye an
 
-* Above each `console.log()` write a comment "predicting" what you think the output will be.
+* Anwo chak `console.log()` ekri rezilta ke'w panse ki pral display nan "console" an. 
 
-* **HINT:** Comments are the grayed lines that begin with `//`. These lines are ignored by JavaScript, and they allow you to explain your code. Commenting your code is an extremely useful habit to get into as it allows other developers to more easily read your code. It will also help you better understand your own applications when you look back at them.
+* **HINT:** Tout kòmantè komanse avèk `//`. JavaScript inyore tout komantè. Se jis yon fason pou'w kapab explike kòd ke'w ekri an avèk yon lòt developer kap gade kòd lan. Kòmanse ki kòmantè se yon bon abitid ke'w sipoze genyen antanke developer. Konsa tou, li kapab ede'w konprann pwòp aplikasyon'w.

@@ -2,7 +2,7 @@
 
 * [`captain-planet-game`](Unsolved/captain-planet-game.html)
 
-### Instructions
+### Enstriksyon
 
 * Look at the jQuery API Docs [(https://api.jquery.com/)](https://api.jquery.com/) and add a button of your own that gives Captain Planet a new power.
 

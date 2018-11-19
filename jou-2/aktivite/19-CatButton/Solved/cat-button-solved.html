@@ -16,7 +16,7 @@
     $("#cat-button").on("click", function() {
 
       // Storing our giphy API URL for a random cat image
-      var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats";
+      let queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats";
 
       // Perfoming an AJAX GET request to our queryURL
       $.ajax({
@@ -28,10 +28,10 @@
         .then(function(response) {
 
         // Saving the image_original_url property
-          var imageUrl = response.data.image_original_url;
+          let imageUrl = response.data.image_original_url;
 
           // Creating and storing an image tag
-          var catImage = $("<img>");
+          let catImage = $("<img>");
 
           // Setting the catImage src attribute to imageUrl
           catImage.attr("src", imageUrl);

@@ -4,7 +4,7 @@
 
 * [`bujumbura-easier`](Unsolved/bujumbura-easier.html) or [`bujumbura-harder`](Unsolved/bujumbura-harder.html)
 
-## Instructions
+## Enstriksyon
 
 * Using either `bujumbura-easier.html` or `bujumbura-harder.html` as a starting point, add in the missing code necessary to accomplish the following:
 

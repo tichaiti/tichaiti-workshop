@@ -41,7 +41,7 @@
         <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
         <script>
         // Initialize Firebase
-        var config = {
+        let config = {
             apiKey: "AIzaSyCRvgOKqvsxzWPF5tZlSpdFjKq9hOopARw",
             authDomain: "tichaiti-af3b9.firebaseapp.com",
             databaseURL: "https://tichaiti-af3b9.firebaseio.com",
@@ -51,14 +51,14 @@
         };
         firebase.initializeApp(config);
 
-        var dbRef = firebase.database().ref().child('utilisateurs');
+        let dbRef = firebase.database().ref().child('utilisateurs');
         dbRef.on('value', snap => afficher(snap));
 
         // --- //
 
         function afficher(data) {
-            var afficheDb = document.getElementById('afficheDb');
-            var table = '<table><tr><th>Ville</th><th>Pr&eacute;nom</th><th>Nom</th></tr>';
+            let afficheDb = document.getElementById('afficheDb');
+            let table = '<table><tr><th>Ville</th><th>Pr&eacute;nom</th><th>Nom</th></tr>';
             const result = data.val();
             if(result != null) {
                 for(let key in  result) {
@@ -70,18 +70,18 @@
         }
 
         function sauvegarder() {
-            var prenon = document.getElementById('prenon');
-            var non = document.getElementById('non');
-            var vil = document.getElementById('vil');
+            let prenon = document.getElementById('prenon');
+            let non = document.getElementById('non');
+            let vil = document.getElementById('vil');
 
-            var donnee = {};
+            let donnee = {};
             donnee = {
                 prenon: prenon.value,
                 non: non.value,
                 vil: vil.value
             };
 
-            var nouvo = {};
+            let nouvo = {};
             nouvo[dbRef.push().key] = donnee;
             dbRef.update(nouvo, erreur => {
                 if(erreur) {

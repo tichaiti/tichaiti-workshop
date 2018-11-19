@@ -1,31 +1,31 @@
 // CRASH COURSE JS
 // ==========================================================
 
-// 1. BASIC VARIABLES
+// 1. BASIC letIABLES
 // ==========================================================
 
-// Create a basic variable
-var name = "Ahmed";
+// Create a basic letiable
+let name = "Ahmed";
 
 
 // 2. ARRAYS
 // ==========================================================
 
 // Create an array of five strings
-var fiveArray = ["Ahmed", "Lexus", "Tom", "Jim", "Joy"];
+let fiveArray = ["Ahmed", "Lexus", "Tom", "Jim", "Joy"];
 
 
 // 3. FOR LOOPS
 // ==========================================================
 
 // Create a for loop that loops through and prints "My name is Bob five times"
-for (var i = 0; i < 5; i++) {
+for (let i = 0; i < 5; i++) {
   console.log("My name is Bob");
 }
 
 
 // Create a for loop that loops through your five string array and prints each name
-for (var i = 0; i < fiveArray.length; i++) {
+for (let i = 0; i < fiveArray.length; i++) {
   console.log("My name is " + fiveArray[i]);
 }
 
@@ -35,8 +35,8 @@ for (var i = 0; i < fiveArray.length; i++) {
 
 // Create a function that takes two numbers and divides the first number by the second.
 // Then call that function
-var divider = function(num1, num2) {
-  var result = num1 / num2;
+let divider = function(num1, num2) {
+  let result = num1 / num2;
   console.log(result);
   return result;
 };
@@ -47,8 +47,8 @@ divider(10, 2);
 
 // Create a function that takes in an array of strings and then loops through the array and prints out strings.
 // Then call that function
-var looper = function(arrayNumbers) {
-  for (var i = 0; i < arrayNumbers.length; i++) {
+let looper = function(arrayNumbers) {
+  for (let i = 0; i < arrayNumbers.length; i++) {
     console.log(arrayNumbers[i]);
   }
 };
@@ -60,7 +60,7 @@ looper(fiveArray);
 // ==========================================================
 
 // Create a JavaScript Object
-var monsterTruck = {
+let monsterTruck = {
   name: "Digital Destructor",
   brand: "Honda",
   carsDestroyed: 2001
@@ -74,7 +74,7 @@ console.log(monsterTruck.carsDestroyed);
 
 
 // Create an Array of 3 Objects
-var threeObjects = [
+let threeObjects = [
   {
     name: "Digital Destructor",
     brand: "Honda",
@@ -94,7 +94,7 @@ var threeObjects = [
 
 
 // Console log 3 properties for every one of the five objects
-for (var i = 0; i < threeObjects; i++) {
+for (let i = 0; i < threeObjects; i++) {
   console.log(threeObjects[i].name);
   console.log(threeObjects[i].brand);
   console.log(threeObjects[i].carsDestroyed);
@@ -112,4 +112,4 @@ for (var i = 0; i < threeObjects; i++) {
 // ==========================================================
 
 // Talk to student a little about the approach for "getting started" on an application.
-// Talk about the concept of variables, functions, calls.
+// Talk about the concept of letiables, functions, calls.

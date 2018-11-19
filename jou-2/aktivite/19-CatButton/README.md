@@ -4,7 +4,7 @@
 
 * [`cat-button`](Unsolved/cat-button.html)
 
-## Instructions
+## Enstriksyon
 
 * Open the file `01-cat-button-students.html` in your browser. Then take a few moments to see what the application does.
 

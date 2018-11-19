@@ -10,4 +10,4 @@
 
   2. Yon dezyem alèt ki display yon mesaj avek kantite de sandwich ke itilizatè an manje.
 
-  3. **HINT:** Wap bezwen yon varyab ki pou swiv pwen yo
+  3. **HINT:** Wap bezwen yon letyab ki pou swiv pwen yo

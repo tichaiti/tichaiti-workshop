@@ -16,7 +16,7 @@
     $("#cat-button").on("click", function() {
 
       //
-      var queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats";
+      let queryURL = "https://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=cats";
 
       //
       $.ajax({
@@ -28,10 +28,10 @@
         .then(function(response) {
 
         //
-          var imageUrl = response.data.image_original_url;
+          let imageUrl = response.data.image_original_url;
 
           //
-          var catImage = $("<img>");
+          let catImage = $("<img>");
 
           //
           catImage.attr("src", imageUrl);

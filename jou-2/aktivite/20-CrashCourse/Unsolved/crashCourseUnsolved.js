@@ -1,10 +1,10 @@
 // CRASH COURSE JS
 // ==========================================================
 
-// 1. BASIC VARIABLES
+// 1. BASIC letIABLES
 // ==========================================================
 
-// Create a basic variable
+// Create a basic letiable
 
 
 
@@ -81,4 +81,4 @@
 // ==========================================================
 
 // Talk to student a little about the approach for "getting started" on an application.
-// Talk about the concept of variables, functions, calls.
+// Talk about the concept of letiables, functions, calls.
