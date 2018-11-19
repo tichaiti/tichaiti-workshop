@@ -1,15 +1,13 @@
-### File
+### Fichye
 
 * [`sandwich-click-unsolved`](Unsolved/sandwich-click-unsolved.html)
 
-### Instructions
+### Enstriksyon
 
-* Add in the missing code such that clicking any of the sandwiches causes…
+* Ajoute kòd ki manke an pou chak lè mwen klike sou yon sandwich, pou'l:
 
-  1. An alert message to popup saying something snarky about the sandwich type.
+  1.  Yon premye alèt ki display yon mesaj a pwopo de diferan tip de sandwich 
 
-  2. A second alert message that displays to the user the number of that specific sandwich they’ve eaten.
+  2. Yon dezyem alèt ki display yon mesaj avek kantite de sandwich ke itilizatè an manje.
 
-  3. **HINT:** You will need counter variables.
-
-* **BONUS:** Add an image to the `image-div` on the click event.
+  3. **HINT:** Wap bezwen yon varyab ki pou swiv pwen yo

@@ -1,8 +1,8 @@
-### File
+### Fichye
 
 * [`trigger-random-unsolved`](Unsolved/trigger-random-unsolved.html)
 
-### Instructions
+### Enstriksyon
 
 * Add in the missing code such that clicking the big blue button triggers a random number (between 1 and 1000) to be selected and prominently displayed in the random-number div.
 
