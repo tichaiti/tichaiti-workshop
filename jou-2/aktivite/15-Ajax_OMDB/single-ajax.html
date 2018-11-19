@@ -3,13 +3,12 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Single AJAX</title>
+  <title>Yon sèl AJAX</title>
 </head>
 
 <body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript">
-    // constructing a queryURL letiable we will use instead of the literal string inside of the ajax method
     let title = "space+jam";
     let queryURL = "https://www.omdbapi.com/?t=" + title + "&y=&plot=short&apikey=trilogy";
 
@@ -20,13 +19,6 @@
       console.log(response);
       console.log(response.Runtime);
     });
-// ---------------------------------------------------------
-
-    console.log("This console.log will probably happen first because of asynchronicity.");
-    let x = 2;
-    let y = 10;
-    let z = 13;
-    console.log("We can also assign some letiables and do some arithmetic while we wait too: 2 + 10 + 13 = ", x + y + z);
   </script>
 
 </body>
