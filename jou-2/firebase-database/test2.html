@@ -85,9 +85,9 @@
             nouvo[dbRef.push().key] = donnee;
             dbRef.update(nouvo, erreur => {
                 if(erreur) {
-                    console.log('Gen yon erè.');
+                    console.log('Gen yon erè: '+ erreur);
                 } else {
-                    console.log('Tout bagay byen pase. Donnée ajouté. '+ erreur);
+                    console.log('Tout bagay byen pase. Donnée ajouté.');
                 }
             });
             prenon.value = '';
