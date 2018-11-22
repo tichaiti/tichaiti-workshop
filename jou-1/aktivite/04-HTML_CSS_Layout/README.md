@@ -18,7 +18,7 @@
   * `h2`
     * font size lan se `24px`
   * Fè paj lan mezire 1024 pixèl epi santre'l avèk `margin: 0 auto`  
-  * Fè`#bio-image` lan `float: left`.
+  * Fè `#bio-image` lan `float: left`.
   * Fè `#bio-image` lan gen yon lajè de 200 pixèl.
   * `#main-bio` sipoze gen yon lajè de `70%`.
     * Ajoute kèk ti margin pou'l gen ti distans. 
