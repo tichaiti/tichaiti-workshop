@@ -1,4 +1,4 @@
-# Instructions
+# Enstriksyon
 
 * `git clone`the whole class repo to your local machine. _This way you'll be able to simply `git pull` the class repo for new activities_. 
 

@@ -6,12 +6,13 @@
 </head>
 <body>
 
-    Base de donnee: <h1 id="test1"></h1>
+    <h1>S&egrave;vis Firebase:</h1> 
+    <h2 id="test1"></h2>
 
     <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
     <script>
       // Initialize Firebase
-      var config = {
+      let config = {
         apiKey: "AIzaSyAaGzqlanVfEaTeG0s0O6suZRPy0H6rES0",
         authDomain: "test1-4b157.firebaseapp.com",
         databaseURL: "https://test1-4b157.firebaseio.com",
@@ -21,10 +22,9 @@
       };
       firebase.initializeApp(config);
 
-      var test1 = document.getElementById('test1');
-      var dbRef = firebase.database().ref().child('text');
+      let test1 = document.getElementById('test1');
+      let dbRef = firebase.database().ref().child('text');
       dbRef.on('value', snap => test1.innerText = snap.val());
-
 
     </script>
 </body>

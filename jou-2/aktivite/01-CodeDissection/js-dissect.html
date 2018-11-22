@@ -9,13 +9,13 @@
   <body>
     <script type="text/javascript">
 
-      var userName = prompt("What's your name?");
-      var confirmCats = confirm("Do you like cats?");
+      let userName = prompt("What's your name?");
+      let confirmCats = confirm("Do you like cats?");
 
-      var petName = "Meeses";
-      var petType = "Tuxedo Cat";
-      var petAge = 5;
-      var petIsCat = true;
+      let petName = "Meeses";
+      let petType = "Tuxedo Cat";
+      let petAge = 5;
+      let petIsCat = true;
 
       if (confirmCats) {
         alert(petName + " " + petType + " " + petAge);
@@ -48,7 +48,7 @@
       // document.write() overwrites the entire page. We don't normally use this, but we will today for simplicity
       document.write("Welcome to our page " + userName);
 
-      var catAge = prompt("How old is your cat?");
+      let catAge = prompt("How old is your cat?");
 
       // Won't work as expected
       alert(catAge + 2);

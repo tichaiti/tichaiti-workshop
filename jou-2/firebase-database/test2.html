@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exemple-2 Firebase</title>
+        <meta charset="utf-8">
+        <style>
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+            }
+            td, th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+        </style>
+    </head>
+    <body>
+
+        <!-- // -->
+
+        <h1>Formulaire:</h1>
+
+        Pr&eacute;nom: <input type="text" id="prenon">&nbsp;
+        Nom: <input type="text" id="non">&nbsp;
+        Ville: <input type="text" id="vil" size="10">&nbsp;
+        <br><br>
+
+        <input type="button" onclick="sauvegarder()" value="sauver">
+        <br><br><br><br>
+
+        <h1>Base de donn&eacute;e:</h1> 
+        <div id="afficheDb"></div>
+
+        <!-- // -->
+
+        <script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+        <script>
+        // Initialize Firebase
+        let config = {
+            apiKey: "AIzaSyCRvgOKqvsxzWPF5tZlSpdFjKq9hOopARw",
+            authDomain: "tichaiti-af3b9.firebaseapp.com",
+            databaseURL: "https://tichaiti-af3b9.firebaseio.com",
+            projectId: "tichaiti-af3b9",
+            storageBucket: "tichaiti-af3b9.appspot.com",
+            messagingSenderId: "893802044284"
+        };
+        firebase.initializeApp(config);
+
+        let dbRef = firebase.database().ref().child('utilisateurs');
+        dbRef.on('value', snap => afficher(snap));
+
+        // --- //
+
+        function afficher(data) {
+            let afficheDb = document.getElementById('afficheDb');
+            let table = '<table><tr><th>Ville</th><th>Pr&eacute;nom</th><th>Nom</th></tr>';
+            const result = data.val();
+            if(result != null) {
+                for(let key in  result) {
+                    table += '<tr><td>'+result[key].vil+'</td><td>'+result[key].prenon+'</td><td>'+result[key].non+'</td></tr>';
+                }
+            }
+            table += '</table>';
+            afficheDb.innerHTML = table;
+        }
+
+        function sauvegarder() {
+            let prenon = document.getElementById('prenon');
+            let non = document.getElementById('non');
+            let vil = document.getElementById('vil');
+
+            let donnee = {};
+            donnee = {
+                prenon: prenon.value,
+                non: non.value,
+                vil: vil.value
+            };
+
+            let nouvo = {};
+            nouvo[dbRef.push().key] = donnee;
+            dbRef.update(nouvo, erreur => {
+                if(erreur) {
+                    console.log('Gen yon erè: '+ erreur);
+                } else {
+                    console.log('Tout bagay byen pase. Donnée ajouté.');
+                }
+            });
+            prenon.value = '';
+            non.value = '';
+            vil.value = '';
+        }
+
+        // --- //
+
+        </script>
+    </body>
+
+</html>

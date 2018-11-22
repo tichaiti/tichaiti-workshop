@@ -1,8 +1,8 @@
 ### File
 
-* [`pizza-variables-2`](Unsolved/pizza-variables-2.html)
+* [`pizza-letiables-2`](Unsolved/pizza-letiables-2.html)
 
-### Instructions
+### Enstriksyon
 
 * Using the file above as a guide, modify the code so that it uses `console.log` instead of alerts to display messages.
 
