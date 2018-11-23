@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic jQuery Dump</title>
+
+  <!-- Ajoute lyen de jQuery an -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <div id="empty-div"></div>
+
+  <!-- La, nou ajoute kèk css -->
+  <style>
+    .fancy {
+      font-size: 100px;
+      color: green;
+    }
+  </style>
+
+  <script type="text/javascript">
+
+    $("#empty-div").html("<h1>Hello friends!</h1>");
+
+    // jQuery sa ekivalan a: const newDiv = document.createElement("div");
+    let newDiv = $("<div>");
+
+    // jQuery sa ekivalan a: newDiv.textContent = "A pleasure to meet you!";
+    newDiv.text("A pleasure to meet you!");
+
+    // jQuery sa ekivalan a: document.querySelector("#empty-div").appendChild(newDiv);
+    $("#empty-div").append(newDiv);
+
+    // Nou kapab fasilman ajoute css avèk jQuery si nou vle avèk atribi ".attr" an.
+    newDiv.attr("class", "fancy");
+
+  </script>
+
+</body>
+</html>
